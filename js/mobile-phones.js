@@ -101,3 +101,5 @@ const mobilePhones = [
         img: "img/samsung-s26-ultra-256-black.webp"
     }
 ];
+
+const phonesContainer = document.querySelector("#phones-container");
