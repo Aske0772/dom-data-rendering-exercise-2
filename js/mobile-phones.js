@@ -103,3 +103,21 @@ const mobilePhones = [
 ];
 
 const phonesContainer = document.querySelector("#phones-container");
+
+function displayPhones(phonesList) {
+    phonesContainer.innerHTML = "";
+
+    phonesList.forEach((phone) => {
+        phonesContainer.innerHTML += `
+            <article>
+                <h2>${phone.brandname} ${phone.brandmodel}</h2>
+                <p>color: ${phone.color}</p>
+                <p>Price: ${phone.price} kr</p>
+                <p>Memory: ${phone.memory}</p>
+                <img src="${phone.img}" alt="${phone.brandname} ${phone.brandmodel}">
+            </article>
+        `;
+    });
+}
+
+displayPhones(mobilePhones);

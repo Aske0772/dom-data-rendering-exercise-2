@@ -10,3 +10,24 @@ body {
     align-items: center;
 }
 
+#phones-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+
+/* Hvert telefonkort */
+article {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 12px;
+    width: 170px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
